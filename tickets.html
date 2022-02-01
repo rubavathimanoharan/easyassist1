@@ -115,9 +115,9 @@ var
                                             <thead>
                                             <tr>
                                                 <th>Ticket No.</th>
+                                                <th>Department</th>
                                                 <th>Subject</th>
                                                 <th>Priority</th>
-                                                <th>Description</th>
                                             </tr>
                                             </thead>
                                             <tbody id="ticketTableBody">
@@ -143,7 +143,19 @@ var
        </div>
       </div>
     
-   
+        <div class="row">
+      <div class="col-25">
+        <label for="country">Department</label>
+      </div>
+      <div class="col-75">
+        <select id="department" name="department">
+          <option value="IT">IT</option>
+          <option value="Facilities">Facilities</option>
+          <option value="Lab Ops/Cloud Ops">Lab Ops/Cloud Ops</option>
+		  <option value="RES">RES</option>	  
+        </select>
+      </div>
+    </div>
   
     <div class="row">
       <div class="col-25">
