@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EasyAssist</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href=
+"//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+	<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js">
+	</script>
+  <style>
+  footer{
+	width: 100%;
+	height: 8%
+}
+body{
+background-color: lavenderblush;
+}
+  * {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h1{
+
+text-align:center;
+}
+img{
+float : left;
+height: 50px;
+}
+</style>
+
+<script>
+var 
+</script>
+</head>
+
+      <body>
+
+      <div class="container col-sm-12">
+                        <div class="bg-light text-dark">
+                            <img src="images/logo.png" alt="Easy Assist"/><h1>EasyAssist</h1>
+                        </div>
+                            <div class="jumbotron"
+                                 style="background-color:snow;">
+
+                            <div class="row">
+                                <div id="headerTicket" on></div>
+                                <div class="col-md-12 text-center">
+                                    <div>
+                                        
+                                         <button type="button" class="btn btn-danger" onclick="newTicket()">Add New Ticket</button>
+                                        </a>
+                                    </div>
+                               </div><br><br>
+
+                                    <div class="table-bordered table-hover table-responsive" style="width: 100%">
+                                        <table class="table" id="ticketTable" style="background-color:dimgray">
+                                            <thead>
+                                            <tr>
+                                                <th>Ticket No.</th>
+                                                <th>Subject</th>
+                                                <th>Priority</th>
+                                                <th>Description</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody id="ticketTableBody">
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                  <div id="outerDiv"></div>
+
+	
+  <div class="container" id = "form1" style = "display:none" >
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="sub">Subject</label>
+        </div>
+	<div class="col-75">
+	<input type="text" id="autocompleteInput" name="tech">
+       </div>
+      </div>
+    
+   
+  
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Priority</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Low</option>
+          <option value="canada">High</option>
+          <option value="usa">Medium</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Description</label>
+      </div>
+      <div class="col-75">
+        <textarea id="descripton" name="descripton" placeholder="Write the descripton here.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+
+	<script>
+		var tags = [
+			"access for bats server", "windows11", "email issue",
+			"authentication failure", "VPN connection",
+			"Devices" 
+		];
+		
+		$("#autocompleteInput").autocomplete({
+			source: tags
+		});
+	</script>
+</body>
+<footer class="text-center card-footer fixed-bottom">
+        <p>&copy Team Ribbon Wizards</p>
+    </footer>
+      <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+
+
+</script>
+      <script src="http://chancejs.com/chance.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src ="scripts/main.js" async></script>
+
+<footer class="text-center card-footer fixed-bottom">
+        <p>&copy Team Ribbon Wizards</p>
+    </footer>
+      </body>
+</html>
